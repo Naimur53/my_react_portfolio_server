@@ -235,7 +235,7 @@ async function run() {
 }
 run().catch(console.dir);
 
-app.get('/', (req, res) => {
+app.get('/', async (req, res) => {
     res.send('Running server')
 })
 
