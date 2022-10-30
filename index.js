@@ -137,7 +137,7 @@ async function run() {
         })
         app.post('/addShowcase', async (req, res) => {
 
-            console.log('adding', data);
+
             const result = await showCase.insertOne(req.body);
             console.log(result);
             res.json(result)
